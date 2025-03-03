@@ -43,22 +43,18 @@ async function writeTrx() {
 }
 const oneSecond = 1010;
 // mainNet
-// const startTime = 1741010400000;
-// const letTimeToStart = startTime - Date.now();
-// const slot1End = letTimeToStart + 4 * 60 * 60 * 1000 + oneSecond;
-// const slot2End = letTimeToStart + 8 * 60 * 60 * 1000 + oneSecond;
-// const slot3End = letTimeToStart + 12 * 60 * 60 * 1000 + oneSecond;
+const startTime = 1741010400000;
+const letTimeToStart = startTime - Date.now();
+const slot1End = letTimeToStart + 4 * 60 * 60 * 1000 + oneSecond;
+const slot2End = letTimeToStart + 8 * 60 * 60 * 1000 + oneSecond;
+const slot3End = letTimeToStart + 12 * 60 * 60 * 1000 + oneSecond;
 
 // testNet
-const startTime = 1741003200000;
-const letTimeToStart = startTime - Date.now();
-const slot1End = letTimeToStart + 20 * 60 * 1000 + oneSecond;
-const slot2End = letTimeToStart + 40 * 60 * 1000 + oneSecond;
-const slot3End = letTimeToStart + 60 * 60 * 1000 + oneSecond;
-
-// console.log(slot1End / (60 * 1000));
-// console.log(slot2End / (60 * 1000));
-// console.log(slot3End / (60 * 1000));
+// const startTime = 1741003200000;
+// const letTimeToStart = startTime - Date.now();
+// const slot1End = letTimeToStart + 20 * 60 * 1000 + oneSecond;
+// const slot2End = letTimeToStart + 40 * 60 * 1000 + oneSecond;
+// const slot3End = letTimeToStart + 60 * 60 * 1000 + oneSecond;
 
 setTimeout(() => {
   writeTrx();
